@@ -137,9 +137,11 @@ img.videography{
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-size: 1.35rem;
-  padding: 10px 50px;
+  padding: 10px;
+  margin: 0 30px;
   text-decoration: none;
   text-transform: uppercase;
+  display: block;
 }
 
 .btn:hover{
@@ -198,7 +200,8 @@ img.videography{
     }   
 
     .btn{
-        padding: 10px 100px;
+        width: 200px;
+        margin: auto;
     }
 
 }
