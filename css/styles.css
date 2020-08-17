@@ -131,9 +131,9 @@ img.videography{
   background-image: -ms-linear-gradient(top, #78BBE6, #2E719E);
   background-image: -o-linear-gradient(top, #78BBE6, #2E719E);
   background-image: linear-gradient(to bottom, #78BBE6, #2E719E); */
-  -webkit-border-radius: 7;
-  -moz-border-radius: 7;
-  border-radius: 7px;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-size: 1.35rem;
