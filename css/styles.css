@@ -48,6 +48,8 @@ img {
 
 h1 {
 	font-size: 4rem;
+	text-align: center;
+	margin: 2rem auto 4rem;
 }
 
 h2 {
@@ -232,9 +234,103 @@ section.contact_me a:hover {
 
 /* END CONTACT PAGE */
 
+/* WORK PAGE */
+
+section.example {
+	text-align: center;
+	padding: 0 20px;
+}
+
+section.example div {
+	width: 94vw;
+	height: 24.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Rufina", serif;
+	font-size: 3rem;
+	color: transparent;
+	margin: 0 auto 150px;
+	border-radius: 10px;
+	transition: all 150ms ease-out;
+}
+
+section.example div:hover {
+	width: 95vw;
+	height: 25rem;
+	box-shadow: 0px 0px 20px black;
+	color: transparent;
+	transition: all 150ms ease-in;
+}
+
+section.example div.example1 {
+	background: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.2),
+			rgba(0, 0, 0, 0.2)
+		),
+		center / cover no-repeat url("../img/originals/potato_screenshot.png");
+}
+
+section.example div.example1:hover {
+	background: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.1),
+			rgba(0, 0, 0, 0.1)
+		),
+		center / cover no-repeat url("../img/originals/potato_screenshot.png");
+}
+
+section.example div.example2 {
+	background: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.2),
+			rgba(0, 0, 0, 0.2)
+		),
+		left / cover no-repeat url("../img/originals/missourian_screenshot.png");
+}
+
+section.example div.example2:hover {
+	background: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.1),
+			rgba(0, 0, 0, 0.1)
+		),
+		left / cover no-repeat url("../img/originals/missourian_screenshot.png");
+}
+
+section.example div.example3 {
+	background: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0.2),
+		rgba(0, 0, 0, 0.2)
+	);
+	background-color: whitesmoke;
+}
+
+section.example div.example3:hover {
+	background: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0.1),
+		rgba(0, 0, 0, 0.1)
+	);
+	background-color: whitesmoke;
+}
+
+@media screen and (min-width: 768px) {
+	section.example div {
+		height: 80vh;
+		width: 70vw;
+		margin: 150px auto;
+	}
+}
+
+/* END WORK PAGE */
+
 /* END SPECIFIC PAGE STYLING */
 
 /* FOOTER */
+
 footer {
 	background: #080827;
 	color: white;
