@@ -121,8 +121,8 @@ section h2 {
 }
 
 section p {
-	margin: 50px 20px 0;
-	max-width: 80%;
+	margin: 50px auto 0;
+	max-width: 90%;
 }
 
 section img {
@@ -139,6 +139,12 @@ section > div {
 
 section h2 {
 	margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+	section p {
+		/* margin: 50px auto 0; */
+	}
 }
 
 /* END SECTION STYLING */
@@ -200,6 +206,7 @@ footer {
 	background: #080827;
 	color: white;
 	padding: 25px 0;
+	text-align: center;
 }
 
 footer p:not(:first-child) {
