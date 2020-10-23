@@ -142,12 +142,16 @@ section h2 {
 }
 
 @media screen and (min-width: 768px) {
-	section p {
-		/* margin: 50px auto 0; */
-	}
+	/* section p {
+		margin: 50px auto 0;
+	} */
 }
 
 /* END SECTION STYLING */
+
+/* SPECIFIC PAGE STYLING */
+
+/* ABOUT PAGE */
 
 .profile h1 {
 	line-height: 1.25;
@@ -200,6 +204,35 @@ section h2 {
 		width: 35%;
 	}
 }
+
+/* END ABOUT PAGE */
+
+/* CONTACT PAGE */
+
+section.contact_me {
+	text-align: center;
+	line-height: 2;
+	font-size: 1.25rem;
+	margin-bottom: 100px;
+}
+
+section.contact_me p:last-child {
+	font-size: 2rem;
+}
+
+section.contact_me a {
+	text-decoration: underline #ec5b53;
+	transition: all 0.2ss ease-out;
+}
+
+section.contact_me a:hover {
+	color: #ec5b53;
+	transition: all 0.2s ease-in;
+}
+
+/* END CONTACT PAGE */
+
+/* END SPECIFIC PAGE STYLING */
 
 /* FOOTER */
 footer {
