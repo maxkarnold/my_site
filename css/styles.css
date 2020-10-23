@@ -1,4 +1,3 @@
-/* Color Palette #EAF6F6#f1f7f8#40514E#D5EEFF#78BBE6#2E719E#1B435D#FF9670*/
 /* New Colors #ec5b53#002d5b#080827#464d65*/
 
 /* RESETS */
@@ -49,7 +48,8 @@ img {
 h1 {
 	font-size: 4rem;
 	text-align: center;
-	margin: 2rem auto 4rem;
+	margin: 2rem 1rem 4rem;
+	line-height: 1.25;
 }
 
 h2 {
@@ -92,6 +92,10 @@ nav a.active {
 	border-bottom: solid #ec5b53 2px;
 }
 
+nav .fa-file-download {
+	display: none;
+}
+
 nav .icon {
 	width: 1rem;
 	background: center / cover no-repeat url(../img/icons/linkedin48px.png);
@@ -104,7 +108,7 @@ nav .icon:hover {
 	transition: all 0.2s ease-in;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 425px) {
 	nav {
 		font-size: 1rem;
 	}
@@ -112,13 +116,17 @@ nav .icon:hover {
 	nav .icon {
 		width: 2rem;
 	}
+
+	nav .fa-file-download {
+		display: inline;
+	}
 }
 
 /* END NAVIGATION */
 
 /* SECTION STYLING */
 
-section h2 {
+/* section h2 {
 	text-align: center;
 }
 
@@ -141,13 +149,7 @@ section > div {
 
 section h2 {
 	margin-bottom: 50px;
-}
-
-@media screen and (min-width: 768px) {
-	/* section p {
-		margin: 50px auto 0;
-	} */
-}
+} */
 
 /* END SECTION STYLING */
 
@@ -155,33 +157,38 @@ section h2 {
 
 /* ABOUT PAGE */
 
-.profile h1 {
-	line-height: 1.25;
+.index {
+	padding: 20px;
+	display: grid;
+	gap: 20px;
+}
+
+.index h1 {
 	margin: 25px 0;
 	text-align: center;
 }
 
-.profile h3 {
+.index h2 {
+	text-align: center;
+	margin: 50px;
+}
+
+.index h3 {
 	font-size: 1.75rem;
-	margin: 20px;
+	margin: 25px 0;
 }
 
-.profile img {
-	margin-bottom: 20px;
+.index img {
+	margin: auto;
 	width: 240px;
-}
-
-@media screen and (min-width: 450px) {
-	.profile div {
-		flex-flow: row;
-	}
-	.profile img {
-		padding: 20px;
-	}
 }
 
 .skill_row {
 	margin-bottom: 50px;
+}
+
+.skill_row img {
+	width: 150px;
 }
 
 .skill_row div {
@@ -195,15 +202,50 @@ section h2 {
 	text-align: center;
 }
 
-@media screen and (min-width: 450px) {
-	.skill_row div {
-		flex-flow: row;
-		justify-content: space-around;
-		margin: 0 20px 20px;
+.index .bio p {
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 600px) {
+	.index {
+		gap: 0;
+		column-gap: 25px;
+		padding: 25px 45px;
 	}
 
-	.skill_row img {
-		width: 35%;
+	.index h1 {
+		text-align: left;
+	}
+
+	.index .profile {
+		grid-row: span 2;
+		grid-column: 2;
+		padding: 1rem;
+		width: 350px;
+	}
+
+	.index .subheading {
+		margin: 0 0 30px;
+	}
+
+	.index h2 {
+		grid-column: span 2;
+	}
+
+	.index p {
+		margin: 10px 15px;
+	}
+
+	.index .bio {
+		grid-column: span 2;
+		width: 80%;
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.index .bio {
+		margin-top: 20px;
 	}
 }
 
@@ -234,36 +276,25 @@ section.contact_me a:hover {
 
 /* END CONTACT PAGE */
 
-/* WORK PAGE */
+/* PROJECTS PAGE */
 
 section.example {
 	text-align: center;
 	padding: 0 20px;
 }
 
-section.example div {
-	width: 94vw;
-	height: 24.5rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.example_box {
+	width: 95%;
+	height: 150px;
 	font-family: "Rufina", serif;
 	font-size: 3rem;
 	color: transparent;
-	margin: 0 auto 150px;
+	margin: 0 auto 10vh;
 	border-radius: 10px;
 	transition: all 150ms ease-out;
 }
 
-section.example div:hover {
-	width: 95vw;
-	height: 25rem;
-	box-shadow: 0px 0px 20px black;
-	color: transparent;
-	transition: all 150ms ease-in;
-}
-
-section.example div.example1 {
+.example1 .example_box {
 	background: linear-gradient(
 			to right,
 			rgba(0, 0, 0, 0.2),
@@ -272,7 +303,7 @@ section.example div.example1 {
 		center / cover no-repeat url("../img/originals/potato_screenshot.png");
 }
 
-section.example div.example1:hover {
+.example1 .example_box:hover {
 	background: linear-gradient(
 			to right,
 			rgba(0, 0, 0, 0.1),
@@ -281,7 +312,7 @@ section.example div.example1:hover {
 		center / cover no-repeat url("../img/originals/potato_screenshot.png");
 }
 
-section.example div.example2 {
+.example2 .example_box {
 	background: linear-gradient(
 			to right,
 			rgba(0, 0, 0, 0.2),
@@ -290,7 +321,7 @@ section.example div.example2 {
 		left / cover no-repeat url("../img/originals/missourian_screenshot.png");
 }
 
-section.example div.example2:hover {
+.example2 .example_box:hover {
 	background: linear-gradient(
 			to right,
 			rgba(0, 0, 0, 0.1),
@@ -299,7 +330,7 @@ section.example div.example2:hover {
 		left / cover no-repeat url("../img/originals/missourian_screenshot.png");
 }
 
-section.example div.example3 {
+.example3 .example_box {
 	background: linear-gradient(
 		to right,
 		rgba(0, 0, 0, 0.2),
@@ -308,7 +339,7 @@ section.example div.example3 {
 	background-color: whitesmoke;
 }
 
-section.example div.example3:hover {
+.example3 .example_box:hover {
 	background: linear-gradient(
 		to right,
 		rgba(0, 0, 0, 0.1),
@@ -317,15 +348,38 @@ section.example div.example3:hover {
 	background-color: whitesmoke;
 }
 
-@media screen and (min-width: 768px) {
-	section.example div {
-		height: 80vh;
-		width: 70vw;
-		margin: 150px auto;
+@media screen and (min-width: 400px) {
+	.example_box {
+		height: 200px;
 	}
 }
 
-/* END WORK PAGE */
+@media screen and (min-width: 600px) {
+	.example_box {
+		height: 300px;
+		width: 550px;
+	}
+	.example_box:hover {
+		width: calc(550px + 1vw);
+		height: calc(300px + 1vh);
+		box-shadow: 0px 0px 20px black;
+		transition: all 150ms ease-in;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.example_box {
+		width: 750px;
+		height: 400px;
+	}
+
+	.example_box:hover {
+		width: calc(750px + 1vw);
+		height: calc(400px + 1vh);
+	}
+}
+
+/* END PROJECTS PAGE */
 
 /* END SPECIFIC PAGE STYLING */
 
