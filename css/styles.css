@@ -180,6 +180,7 @@ section h2 {
 }
 
 .index h3 {
+	text-align: center;
 	font-size: 1.75rem;
 	margin: 25px 0;
 }
@@ -203,7 +204,7 @@ section h2 {
 	align-items: center;
 }
 
-.skill_row h3 {
+.index .skill_row h3 {
 	margin-top: 30px;
 	text-align: center;
 }
@@ -220,6 +221,10 @@ section h2 {
 	}
 
 	.index h1 {
+		text-align: left;
+	}
+
+	.index h3 {
 		text-align: left;
 	}
 
@@ -361,13 +366,13 @@ section.example {
 footer {
 	background: #080827;
 	color: white;
-	padding: 25px 0;
+	padding: 10px 0;
 	text-align: center;
 	font-size: 0.75rem;
 }
 
 footer p:not(:first-child) {
-	margin-top: 20px;
+	margin-top: 0;
 }
 
 footer a {
