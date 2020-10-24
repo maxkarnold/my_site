@@ -306,6 +306,13 @@ section.example {
 	transition: all 150ms ease-out;
 }
 
+.example_box:hover {
+	width: calc(95% + 1vw);
+	height: calc(150px + 1vh);
+	box-shadow: 0px 0px 20px black;
+	transition: all 150ms ease-in;
+}
+
 .example1 .example_box {
 	background: center / cover no-repeat
 		url("../img/originals/potato_screenshot.png");
@@ -330,6 +337,10 @@ section.example {
 	.example_box {
 		height: 200px;
 	}
+
+	.example_box:hover {
+		height: calc(200px + 1vw);
+	}
 }
 
 @media screen and (min-width: 600px) {
@@ -340,8 +351,6 @@ section.example {
 	.example_box:hover {
 		width: calc(550px + 1vw);
 		height: calc(300px + 1vh);
-		box-shadow: 0px 0px 20px black;
-		transition: all 150ms ease-in;
 	}
 }
 
