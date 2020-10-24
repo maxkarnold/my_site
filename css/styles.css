@@ -92,7 +92,7 @@ nav a.active {
 	border-bottom: solid #ec5b53 2px;
 }
 
-nav .fa-file-download {
+nav a.desktop {
 	display: none;
 }
 
@@ -116,9 +116,15 @@ nav .icon:hover {
 	nav .icon {
 		width: 2rem;
 	}
+}
 
-	nav .fa-file-download {
+@media screen and (min-width: 600px) {
+	nav a.desktop {
 		display: inline;
+	}
+
+	nav a.mobile {
+		display: none;
 	}
 }
 
